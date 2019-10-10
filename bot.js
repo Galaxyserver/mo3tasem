@@ -1,11 +1,11 @@
 const Discord = require('discord.js'); 
 const client = new Discord.Client({disableEveryone: true});
-const prefix = 'R'
+const prefix = 'M'
 
 
 client.on("message", message => {
 
-    if (message.content.startsWith("Rbbc")) {
+    if (message.content.startsWith("Mbbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -21,7 +21,7 @@ client.on("message", message => {
  
  client.on("message", message => {
 
-    if (message.content.startsWith("Rbc")) {
+    if (message.content.startsWith("Mbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
